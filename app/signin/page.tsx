@@ -1,6 +1,5 @@
 // app/signin/page.tsx
-// sign in page collect data from user  and store  in mongodb 
-// user data structure make in models folder in User.ts
+// in store data found user if they exist if is they not then redirect to the sign up page 
  
 "use client"
 

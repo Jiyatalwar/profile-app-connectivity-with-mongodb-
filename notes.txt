@@ -1,0 +1,18 @@
+Created reusable authentication notes:
+
+AUTH_REUSE_NOTES.md
+
+It explains:
+
+Sign-up page flow
+Sign-in page flow
+Logout and session handling
+auth.ts server actions
+User.ts model
+MongoDB setup
+Required packages
+Environment variables
+Superuser/admin permissions
+Routes and reuse checklist
+Production security improvements
+Also removed the unused import from models/User.ts. No diagnostics remain in that file.

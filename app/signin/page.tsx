@@ -1,4 +1,6 @@
 // app/signin/page.tsx
+// in store data found user if they exist if is they not then redirect to the sign up page 
+ 
 "use client"
 
 import { useState } from "react"

@@ -1,4 +1,6 @@
 // app/test-db/page.tsx
+//  test data collection for connectivty check beetwen  node aand mongodb
+
 "use client"
 
 import { useState } from "react"

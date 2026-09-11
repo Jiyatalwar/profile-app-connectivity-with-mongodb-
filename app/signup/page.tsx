@@ -1,4 +1,7 @@
 // app/signup/page.tsx
+// sign in page collect data from user  and store  in mongodb 
+// user data structure make in models folder in User.ts
+// sturcture make in user before collect data 
 "use client"
 
 import { useState } from "react"

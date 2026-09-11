@@ -7,9 +7,13 @@ import bcrypt from "bcryptjs"
 import { cookies } from "next/headers"
 import { SignJWT, jwtVerify } from "jose"
 
-const JWT_SECRET = new TextEncoder().encode(
-  process.env.JWT_SECRET || "your-fallback-secret-key"
-)
+const jwtSecret = process.env.JWT_SECRET
+
+if (!jwtSecret) {
+  throw new Error("Please define the JWT_SECRET environment variable.")
+}
+
+const JWT_SECRET = new TextEncoder().encode(jwtSecret)
 
 type SessionUser = {
   id: string

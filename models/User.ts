@@ -1,5 +1,5 @@
 // models/User.ts
-import mongoose, { Schema, model, models } from "mongoose"
+import { Schema, model, models } from "mongoose"
 
 const UserSchema = new Schema(
   {
@@ -18,13 +18,10 @@ const UserSchema = new Schema(
       type: String,
       required: [true, "Phone number is required"],
     },
-    company: {
-      type: String,
-      required: [true, "Company name is required"],
-    },
     role: {
       type: String,
-      required: [true, "Role is required"],
+      enum: ["user", "superuser"],
+      default: "user",
     },
     password: {
       type: String,

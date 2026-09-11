@@ -1,27 +1,20 @@
-import Link from "next/link"
+// app/page.tsx
+"use client"
 
-const page = () => {
+import Navbar from "@/app/components/Navbar"
+
+export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 p-4">
-      <h1 className="text-3xl font-bold text-gray-900 mb-6">Home</h1>
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      <Navbar />
 
-      <div className="flex gap-4">
-        <Link
-          href="/signin"
-          className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition-colors"
-        >
-          Sign In
-        </Link>
-
-        <Link
-          href="/signup"
-          className="px-4 py-2 border border-gray-300 hover:bg-gray-100 text-gray-700 font-medium rounded-lg transition-colors"
-        >
-          Sign Up
-        </Link>
-      </div>
+      {/* Main Page Content */}
+      <main className="flex-1 flex flex-col items-center justify-center p-4">
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">Home</h1>
+        <p className="text-gray-600 text-center">
+          Use the avatar on the top right to access your account options.
+        </p>
+      </main>
     </div>
   )
 }
-
-export default page

@@ -80,36 +80,6 @@ export default function SignupPage() {
               placeholder="+91 9876543210"
             />
           </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Company Name</label>
-            <input
-              name="company"
-              type="text"
-              required
-              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
-              placeholder="Binary Global Limited"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Role</label>
-            <select
-              name="role"
-              required
-              defaultValue=""
-              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none text-gray-700"
-            >
-              <option value="" disabled>Select your role</option>
-              <option value="Fullstack Developer">Fullstack Developer</option>
-              <option value="Frontend Developer">Frontend Developer</option>
-              <option value="Backend Developer">Backend Developer</option>
-              <option value="Cybersecurity Specialist">Cybersecurity Specialist</option>
-              <option value="Project Manager">Project Manager</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">Password</label>
             <input
